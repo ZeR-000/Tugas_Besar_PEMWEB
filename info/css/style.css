@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body
+{
+    min-height: 100vh;
+    background-image: url('../image/set.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+}
+.contact_bagian
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info_contact
+{
+    color: #000;
+    font-weight: 500;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 150px;
+    font-size: 18px;
+}
+.info_contact i
+{
+    margin-right: 20px;
+    font-size: 25px;
+
+}
+.contact_form
+{
+    max-width: 700px;
+    margin-right: 50px;
+}
+.info_contact .contact_form
+{
+   flex: 1;
+}
+.contact_form h2
+{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.contact_form .text_box
+{
+    background: #303030;
+    color: #fff;
+    border: none;
+    width: calc(50% - 2%);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+.contact_form .text_box:first-child
+{
+    margin-right: 15px;
+}
+.contact_form textarea
+{
+    background: #303030;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 300px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+.contact_form .tombol
+{
+    float: right;
+    background: #2e94e2;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+}
+.contact_form .tombol:hover
+{
+    background: #0582E3;
+}
+@media screen and (max-width: 768px)
+{
+    .contact_bagian
+    {
+        flex-direction: column;
+    }
+    .info_contact .contact_form
+    {
+        margin: 30px 50px;
+    }
+    .contact_form h2
+    {
+        font-size: 30px;
+    }
+    .contact_form .text_box
+    {
+        width: 100%;
+    }
+}
