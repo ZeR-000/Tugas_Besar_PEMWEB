@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Login And Regeistration</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <a href="../index.html"><i class="fa fa-arrow-left" style="font-size:48px;color:red"></i></a>
+    <div class="helo">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+
+            </div>
+            <div class="sosmed-icon">
+                <img src="fb.png">
+                <img src="ig.png">
+                <img src="wa.png">
+            </div>
+            <form action="proses_login.php" method="POST" id="login" class="input-grup">
+                <input type="text" class="input-field" name="username" placeholder="Username Id" required>
+                <input type="password" class="input-field" name="password" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Me</span>
+                <input type="submit" name="login" class="submit-btn" value="Login">
+            </form>
+            <form action="register-proses.php" method="POST" id="register" class="input-grup">
+                <input type="text" class="input-field" name="nama" placeholder="Nama" required>
+                <input type="text" class="input-field" name="username" placeholder="Username Id" required>
+                <input type="password" class="input-field" name="password" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                <input type="submit" name="register" class="submit-btn" value="Regiter">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+
+    </script>
+</body>
+
+</html>

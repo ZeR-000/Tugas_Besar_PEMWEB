@@ -1,0 +1,123 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+::selection
+{
+    transition: all 0.3s ease;
+    background: #3be674;
+}
+body
+{
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to top, #1e130c, #9a8478);
+}
+header
+{
+    margin-top: 7px;
+}
+h1
+{
+    color: #fff;
+    margin: auto;
+    text-align: center;
+}
+.container
+{
+    max-width: 1130px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.container .bungkus
+{
+    width: calc(33% - 13%);
+    border-radius: 3px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+.container .bungkus img
+{
+    width: 100%;
+    border-radius: 3px;
+}
+.container .bungkus .content
+{
+    padding: 10px 20px 22px 20px;   
+}
+.container .bungkus .content
+{
+    padding: 10px 20px 22px 20px;   
+}
+.bungkus .baris
+{
+    padding: 10px 20px 22px 20px;
+}
+.baris .harga
+{
+    font-size: 19px;
+}
+.baris .harga
+{
+    display: flex;
+    justify-content: space-between;
+}
+.content span
+{
+    font-size: 22px;
+    font-weight: 700;
+}
+.content p
+{
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 400;
+}
+.baris .tombol
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.baris .tombol button
+{
+    width: 100%;
+    padding: 10px 25px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: 2px solid #3be674 ;
+    background: #fff;
+    color: #3be674;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.tombol button:hover
+{
+    background: #3be674;
+    color: #fff;
+}
+@media(max-width: 1000px){
+
+    .container .bungkus
+    {
+        width: calc(33% - 20px);
+        
+    }
+}
+@media(max-width: 600px){
+
+    .container .bungkus
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
